@@ -1,0 +1,23 @@
+{
+  "name": "cvs-tools",
+  "version": "0.0.1",
+  "description": "Adapter for CVS",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cvsgit/core.git"
+  },
+  "keywords": [
+    "vintage",
+    "cvs"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cvsgit/core/issues"
+  },
+  "homepage": "https://github.com/cvsgit/core#readme"
+}

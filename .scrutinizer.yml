@@ -1,0 +1,6 @@
+checks:
+    javascript: true
+build: true
+filter:
+    excluded_paths:
+        - test/*

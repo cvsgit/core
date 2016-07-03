@@ -1,8 +1,2 @@
-
-apt-get update
-
-apt-get install cvs
-
-mkdir /var/cvs
-
-cvs -d /var/cvs init
+sudo mkdir /var/cvs
+sudo cvs -d /var/cvs init

@@ -4,11 +4,15 @@
   "description": "Adapter for CVS",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "./node_modules/.bin/mocha"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cvsgit/core.git"
+  },
+  "devDependencies": {
+    "chai": "3.x",
+    "mocha": "latest"
   },
   "keywords": [
     "vintage",

@@ -6,7 +6,7 @@ node_js:
 before_install:
   - sudo apt-get -qq update
   - sudo apt-get install -y cvs xinetd
-  - sh specs/fixtures/config.ubuntu.sh
+  - sh test/fixtures/config.ubuntu.sh
 notifications:
   webhooks:
     urls:

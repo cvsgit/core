@@ -10,7 +10,7 @@ before_install:
 notifications:
   webhooks:
     urls:
-      - https://webhooks.gitter.im/e/d7e22f859cbf45b63ffa
+      - https://webhooks.gitter.im/e/198ec30cc47319b28cbb
     on_success: always
     on_failure: always
     on_start:   always

@@ -1,0 +1,12 @@
+service cvspserver
+{
+   port = 2401
+   socket_type = stream
+   protocol = tcp
+   user = root
+   wait = no
+   type = UNLISTED
+   server = /usr/bin/cvs
+   server_args = -f --allow-root /usr/local/cvsroot pserver
+   disable = no
+}

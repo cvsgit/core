@@ -23,8 +23,3 @@ class Repository {
 }
 
 module.exports = Repository;
-
-
-"use strict";
-
-module.exports = {};

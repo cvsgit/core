@@ -2,7 +2,7 @@
   "name": "cvs-tools",
   "version": "0.0.1",
   "description": "Adapter for CVS",
-  "main": "index.js",
+  "main": "CVS.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha"
   },

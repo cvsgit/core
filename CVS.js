@@ -5,12 +5,13 @@ var Init = require("./src/Command/init.js"),
 
 class Repository {
 
-  construct(root) {
+  constructor(root) {
     this._root = root;
   }
 
   init() {
-
+    var init = new Init(this);
+    return init.run();
   }
 
   login() {

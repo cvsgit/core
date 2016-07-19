@@ -15,7 +15,8 @@ class Repository {
   }
 
   login() {
-
+    var login = new Login(this);
+    return login.run();
   }
 
   get root() {

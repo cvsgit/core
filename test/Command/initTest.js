@@ -9,8 +9,8 @@ describe("Init", function() {
 
   beforeEach(function(done) {
 
-    rmdir("test/fixtures/cvs_dir", function() {
-      fs.mkdirSync("test/fixtures/cvs_dir");
+    rmdir("test/fixtures/local", function() {
+      fs.mkdirSync("test/fixtures/local");
       return done();
     });
   });
@@ -19,7 +19,7 @@ describe("Init", function() {
 
     it ("create repository", function(done) {
 
-      var localrep = path.join(process.cwd(), "test/fixtures/cvs_dir");
+      var localrep = path.join(process.cwd(), "test/fixtures/local");
 
       expect(fs.readdirSync(localrep)).to.have.length(0)
 

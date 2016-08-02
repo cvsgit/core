@@ -15,7 +15,9 @@ class Repository {
   }
 
   login(password) {
+
     var login = new Login(this);
+    password && login.setPassword(password);
     return login.run();
   }
 

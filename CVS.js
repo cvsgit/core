@@ -14,9 +14,21 @@ class Repository {
     return init.run();
   }
 
-  login() {
+  login(password) {
     var login = new Login(this);
     return login.run();
+  }
+
+  logout() {
+    
+  }
+
+  import(message = '', repository, vendortag, releasetag, options) {
+  
+  }
+
+  checkout(repository, options) {
+    
   }
 
   get root() {

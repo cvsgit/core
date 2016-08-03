@@ -28,8 +28,8 @@ class Login {
       cvs.on("close", (code) => {
 
         if (code) {
-	  return reject(error);
-	}
+      	  return reject(error);
+      	}
 
         return resolve(true);
       });

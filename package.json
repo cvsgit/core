@@ -4,7 +4,7 @@
   "description": "Adapter for CVS",
   "main": "CVS.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha"
+    "test": "./node_modules/.bin/mocha --recursive"
   },
   "repository": {
     "type": "git",
@@ -12,7 +12,8 @@
   },
   "devDependencies": {
     "chai": "3.x",
-    "mocha": "latest"
+    "mocha": "latest",
+    "rmdir": "^1.2.0"
   },
   "keywords": [
     "vintage",

@@ -9,7 +9,7 @@ before_install:
   - sudo apt-get -qq update
   - sudo apt-get install -y cvs
   - docker build -t cvs-core .
-  - docker run -d -p 2401:2401 cvs-core
+  - docker run -d -v $PWD/test/fixtures/remote:/var/cvsroot -p 2401:2401 cvs-core
 notifications:
   webhooks:
     urls:

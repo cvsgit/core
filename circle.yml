@@ -9,3 +9,6 @@ machine:
 dependencies:
   pre:
     - sudo apt-get update && sudo apt-get install cvs
+notify:
+  webhooks:
+    - url: https://webhooks.gitter.im/e/e54c8e54535beb47e3b0

@@ -5,10 +5,12 @@ machine:
     - docker
   environment:
     cvsuser: foo
-    cvspasswd: bar    
+    cvspasswd: bar
 dependencies:
   pre:
     - sudo apt-get update && sudo apt-get install cvs
+    - docker pull costamauricio/alpine-cvs
+    - docker run -d -e CVS_USER=cvsuser -e CVS_PASSWD=cvspass -v $PWD/test/fixtures/remote:/var/cvsroot -p 2401:2401 costamauricio/alpine-cvs
 notify:
   webhooks:
     - url: https://webhooks.gitter.im/e/e54c8e54535beb47e3b0

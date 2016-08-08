@@ -7,8 +7,8 @@ node_js:
 before_install:
   - sudo apt-get -qq update
   - sudo apt-get install -y cvs
-  - docker build -t cvs-core .
-  - docker run -d -v $PWD/test/fixtures/remote:/var/cvsroot -p 2401:2401 cvs-core
+  - docker pull costamauricio/alpine-cvs
+  - docker run -d -e CVS_USER=cvsuser -e CVS_PASSWD=cvspass -v $PWD/test/fixtures/remote:/var/cvsroot -p 2401:2401 costamauricio/alpine-cvs
 notifications:
   webhooks:
     urls:
